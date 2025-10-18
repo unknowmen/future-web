@@ -1,5 +1,5 @@
-// models/Booking.js
-// ไฟล์นี้ใช้สร้าง Schema และ Model สำหรับข้อมูลการจองใน MongoDB
+
+// ไฟล์นี้ใช้สร้าง Schema และ Model สำหรับข้อมูลการบันทึกใน MongoDB
 import mongoose from 'mongoose';
 
 const BookingSchema = new mongoose.Schema({
@@ -23,6 +23,5 @@ const BookingSchema = new mongoose.Schema({
   },
 });
 
-// ตรวจสอบว่ามี Model ที่ชื่อ Booking อยู่แล้วหรือไม่
-// ถ้ามีให้ใช้ตัวเดิม ถ้าไม่มีให้สร้างใหม่
+
 export default mongoose.models.Booking || mongoose.model('Booking', BookingSchema);
